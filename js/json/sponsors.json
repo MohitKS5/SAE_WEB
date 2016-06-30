@@ -1,0 +1,49 @@
+{
+    "sponsor_list": [
+        {
+            "website":"http://www.tatasteel.com/",
+            "image_src":"tata.jpg"
+        },
+        {
+            "website":"http://www.imaginarium.co.in/",
+            "image_src":"imaginarium.jpg"
+        },
+        {
+            "website":"http://www.kaztechnologies.com/",
+            "image_src":"kaz.jpg"
+        },
+        {
+            "website":"http://www.nbcbearings.com/",
+            "image_src":"nbc.jpg"
+        },
+        {
+            "website":"http://www.ricardo.com/",
+            "image_src":"ricardo.gif"
+        },
+        {
+            "website":"http://www.pratibhasyntex.com/",
+            "image_src":"pratibha.jpg"
+        },
+        {
+            "website":"http://royalenfield.com/",
+            "image_src":"royal.gif"
+        },
+        {
+            "website":"http://www.wilwood.com/",
+            "image_src":"wilwood.png"
+        },
+        {
+            "website":"http://quaife.co.uk/",
+            "image_src":"quaife.jpg"
+        },
+        {
+            "website":"#",
+            "image_src":"crystal.jpg"
+        },
+        {
+            "website":"http://www.avon-tyres.co.uk/",
+            "image_src":"avon-tyres.jpg"
+        }
+    ]
+        
+}

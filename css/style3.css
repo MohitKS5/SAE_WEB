@@ -1,0 +1,57 @@
+.ribbon-banner {
+  display: table;
+  max-width: 85%;
+  font-size: 24px;
+  line-height: 1.1;
+  position: relative;
+  background: gray;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzkyOTI5MiIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjODA4MDgwIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOTI5MjkyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #929292), color-stop(50%, #808080), color-stop(100%, #929292));
+  background: -moz-linear-gradient(left, #929292, #808080, #929292);
+  background: -webkit-linear-gradient(left, #929292, #808080, #929292);
+  background: linear-gradient(to right, #929292, #808080, #929292);
+  color: #fff;
+  text-align: center;
+  padding: .3em 1em .3em;
+  margin: .75em auto 1.25em;
+  text-shadow: 0 1px 3px #6c6c6c;
+}
+.ribbon-banner:before, .ribbon-banner:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -0.35em;
+  border-width: .85em;
+  border-style: solid;
+  border-color: gray;
+  z-index: -1;
+}
+.ribbon-banner:before {
+  left: -1em;
+  border-right-width: 1.5em;
+  border-left-width: 0.5em;
+  border-left-color: transparent;
+}
+.ribbon-banner:after {
+  right: -1em;
+  border-left-width: 1.5em;
+  border-right-width: 0.5em;
+  border-right-color: transparent;
+}
+.ribbon-banner span:before,
+.ribbon-banner span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #616161 transparent transparent transparent;
+  bottom: -0.35em;
+}
+.ribbon-banner span:before {
+  left: 0;
+  border-width: 0.35em 0 0 1em;
+}
+.ribbon-banner span:after {
+  right: 0;
+  border-width: 0.35em 1em 0 0;
+}

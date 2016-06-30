@@ -1,0 +1,291 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic");
+$font-stack: "Open Sans","Helvetica Neue","Helvetica","Arial","sans-serif";
+
+$xs-pad: 10px;
+$sm-pad: 15px;
+$md-pad: 30px;
+$lg-pad: 50px;
+$xl-pad: 100px;
+$dropDown: false;
+$transition: all 0.3s ease;
+$bs-1: 0 2px 4px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .16);
+
+$color-stack:
+	(group: gray, id: dark, color: #444),
+	(group: gray, id: pale, color: #eee),
+	(group: social, id: twitter, color: #55acee),
+	(group: social, id: github, color: #999),
+	(group: social, id: linkedin, color: #0976b4),
+	(group: social, id: email, color: #dd4b39),
+	(group: blue, id: normal, color: #2196f3),
+	(group: blue, id: 300, color: #64b5f6),
+	(group: blue, id: 400, color: #42a5f5),
+	(group: blue, id: 500, color: #2196f3),
+	(group: blue, id: 600, color: #1e88e5),
+	(group: blue, id: 700, color: #1976d2),
+	(group: black, id: normal, color: #000),
+	(group: white, id: normal, color: #fff);
+
+// Color  Function
+@function color($group, $shade:normal, $transparency:1) {
+  @each $color in $color-stack {
+    $c-group: map-get($color, group);
+    $c-shade: map-get($color, id);
+    @if($group == map-get($color, group) and $shade == map-get($color, id)){
+      @return rgba(map-get($color, color), $transparency);
+    }
+  }
+}
+
+$colors: (
+	"facebook": "#3B5998",
+	"instagram": "#3f729b",
+	"google": "#DC4A38",
+	"mail": "#F26798"
+);
+
+
+body {
+  font-family: $font-stack;
+  margin-top: 50px;
+}
+
+.container {
+  background: #fff;
+  display: block;
+  clear: both;
+}
+
+hr {
+  margin: 0;
+  margin-top: 20px; 
+}
+
+.gutter {
+  height: 30px;
+}
+
+.navbar {
+    background: color(white);
+    border: 0;
+  
+    .container {
+      border-bottom: 1px solid color(gray, pale);
+    }
+}
+
+.navbar-default {
+  .navbar-nav {
+    > li {
+      > a {
+        transition: $transition;
+        
+        &:hover, &:focus {
+          color: color(white);
+          background-color: color(blue, 300);
+        }
+      }
+    }
+
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: color(white);
+        background-color: color(blue);
+      }
+    }
+
+    > .open {
+      > a,
+      > a:hover,
+      > a:focus {
+        color: color(white);
+        background-color: color(white);
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: color(white);
+
+    &:hover, 
+    &:focus {
+      background-color: color(white);
+    }
+
+    .icon-bar {
+      background-color: color(gray, dark);
+    }
+  }
+
+  .navbar-collapse, 
+  .navbar-form {
+    border-color: color(white);
+  }
+
+  .navbar-link {
+    &:hover {
+      color: color(white);
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu { 
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: color(white);
+        background-color: color(blue, 300);
+      }
+    }
+  }
+}
+
+.hero {
+  height: calc(80vh - 120px);
+  min-height: 200px;
+}
+
+.hero__title {
+  font-weight: 300;
+  font-size: 42px;
+}
+
+.hero__text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero__sub {
+  font-size: 24px;
+}
+
+.hero__underline {
+  background: color(blue);
+  height: 2px;
+  margin: 0 auto;
+  margin-top: $md-pad;
+  width: $xl-pad;
+}
+
+.gallery {
+  width: 100%;
+  height: 500px;
+  
+  .gallery-cell {
+    height: 100%;
+    width: auto;
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.flickity-prev-next-button {
+  background: color(white);
+  box-shadow: $bs-1;
+  transition: $transition;
+}
+
+.flickity-page-dots {
+  bottom: 12px;
+}
+
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white;
+}
+
+.flickity-page-dots .dot {
+
+  &.is-selected {
+    background: white;
+    box-shadow: $bs-1;
+  }
+}
+
+.thumbnail {
+  position:relative;
+  overflow:hidden;
+  border: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border-radius: 0;
+}
+ 
+.caption {
+  position: absolute;
+  background: color(blue, 500, .6);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: color(white) !important;
+  z-index: 2;
+  opacity: 0;
+  transition: $transition;
+}
+
+.caption__likes {
+  margin: 0;
+  position: relative;
+  color: color(white) !important;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: $bs-1;
+}
+
+.thumbnail:hover {
+  .caption {
+    opacity: 1;
+  }
+}
+
+.footer__text {
+  line-height: 98px;
+  opacity: .5;
+  margin: 0;
+}
+
+.footer__social {	
+	display: inline-block;
+	width: 100%;
+	height: 98px;
+	text-align: center;
+	position: relative;
+	opacity: 1;
+	transition: $transition;
+  line-height: 98px;
+  text-align: center;
+  vertical-align: middle;
+  
+	.fa {
+		vertical-align: middle;
+		transition: $transition;
+	}
+	
+	@each $class,$color in $colors {
+		&.#{$class} {
+			&:hover {
+				background-color: #{$color};
+			}
+			
+			.fa {
+				color: #{$color};
+			}
+		}
+	}
+	
+	&:hover {
+		.fa {
+			color: color(white);
+		}
+	}
+	
+	&:focus {
+		opacity: .85;
+	}
+}

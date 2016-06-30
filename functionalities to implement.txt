@@ -1,0 +1,90 @@
+BACKEND FRAMEWORK
+FRONTEND FRAMEWORK --> HTML5 BOILERPLATE + ANGULARJS + JQUERY
+SERVER DATABASE TO SAVE DATA(TEAM MEMBERS,ALUMNI,SPONSORS,NEWS FEED)
+PARALLAX EFFECT
+FULLY RESPONSIVE
+Links having #hashtags
+
+----------------------
+Header
+----------------------
+Links for complete navigation
+
+----------------------
+Landing page
+----------------------
+Promotionl Video
+Recent New Feed with "Read More"
+SPONSORS ON LANDING PAGE
+Cool Carousel with awesome pics of same size
+About Us, Adopt A Part, Meet our current Sponsors
+Animated Text of "Design","Build","Race"
+
+----------------------
+Footer
+----------------------
+
+
+----------------------
+About Us
+----------------------
+Present About Us Content nicely
+Description of DYNAMIC and STATIC events with pics
+
+----------------------
+TIMELINE OF EVENTS
+----------------------
+
+----------------------
+Sponsors
+----------------------
+Show Sponsors from each season nicely, Ask about type of sponsor 
+Sponsors benefits -> why sponsor us?
+
+----------------------
+Alumni
+----------------------
+Show Our Proud Alumni nicely
+
+----------------------
+News Feed
+----------------------
+IMPLEMENT NEWS FEED INSTEAD OF BLOG(WITH UNIQUE LINKS CORRESPONDING TO A PARTICULAR NEWS FEED)
+PIC ENLARGEMENT ON CLICK
+
+----------------------
+Team
+----------------------
+TEAM MEMBERS PICS IN DISCIPLINED MANNER(FSAE T-SHIRT)
+SAE HIERARCHY WITH DEPARTMENTS AND WHICH DEPT. IS SUPPOSED TO DO WHAT and Members of respective departments
+
+----------------------
+Cars
+----------------------
+All Type of CARS made so far and their full journey,pics,specification,team members,achievements,(ask for specific sponsors)
+CARS FULL MODEL(3D)(WITH SPECIFICATIONS)
+
+----------------------
+Downloads
+----------------------
+Ask for more Downloads options
+BROCHURE ONLINE VIEW(INTEGRATE SOMETHING LIKE ISSUU)
+
+----------------------
+Gallery
+----------------------
+GALLERY COMPAITIBLE WITH TIMELINE AND FULL OF PICS
+
+----------------------
+Contact Us
+----------------------
+Ask for updated Contact Details
+Custom Google Maps
+
+*********************************
+A BASIC PANEL TO EDIT A NEWS FEED(WITH AUTHOR, PICS, DESCRIPTION, SHARE IT) 
+A BASIC PANEL TO EDIT TEAM MEMBERS(FSAE, BAJA, NON-TECHNICAL, EFFICYCLE), ALUMNI, SPONSORS
+**************Extra**************
+WEBSITE VISITOR COUNTER(GOOGLE ANALYTICS)
+Ask for a faq section
+404 Page Not Found

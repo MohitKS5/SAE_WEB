@@ -1,0 +1,44 @@
+.container1 {
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+
+.top, .bottom {
+  position: absolute;
+  background: rgba(255,255,255,0.7);
+  width: 100%;
+  height: 30px;
+  z-index: 2;
+  color: #333;
+  text-align: center;
+  font-family: arial;
+  line-height: 30px;
+}
+
+.top {
+  top: 0;
+  font-weight: bold;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.alternative {
+  position: absolute;
+  top: 0; left: 0;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.container:hover > img.alternative {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+p.caption {
+  margin: 0;
+  font: 1em/1.1em Georgia;
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}

@@ -1,0 +1,841 @@
+/* ---------------------------------------------
+
+	CORPORATE.CSS
+	Author: Engage Interactive
+
+-----------------------------------------------*/
+
+body,
+#overlay .background,
+.tmask {
+	/*background: #e0dcd4 url(../img/background.jpg);
+	background: url(../img/header.gif) 0 0 repeat-x, #e0dcd4 url(../img/background.jpg) 50% 0;*/
+	color: #5c4832;
+}
+
+
+/* FOR IE */
+
+/*.ie #page_decorations {
+	background: url(../img/header.gif) 0 0 repeat-x;
+}*/
+
+
+/* LINK COLOUR */
+
+a {
+	color: #d38902;
+}
+
+
+/* BLOCKQUOTE */
+
+blockquote p {
+	border-color: #d4d2cb;
+}
+
+blockquote:before {
+	border-left-color: #d4d2cb;
+}
+
+#logo {
+	width: 228px;
+}
+
+
+/*-------------------------------
+
+	GENERIC STUFF
+
+-------------------------------*/
+
+/*---------------------
+
+	WHITE LINK
+
+*/
+
+.white_link:hover,
+#brands .current span,
+footer li a:hover {
+	background-color: #3a9490;
+	text-shadow: 1px 1px #328884;
+}
+
+.brand_accent .white_link:hover {
+	background-color: #f18a00;
+	color: #FFF;
+	text-shadow: 1px 1px rgba(0,0,0,.2);
+}
+
+.brand_accent .white_link {
+	color: #333;
+	text-shadow: none;
+}
+
+
+/*---------------------
+
+	CONTENT AREAS
+
+---------------------*/
+
+
+/* SIMPLE PROMO */
+
+.simple_promo h3 {
+	color: #2da19f;
+}
+
+
+/* BEIGE */
+
+.beige,
+.beige .light {
+	background: #F8F7F3 url(../img/white.jpg);
+}
+
+.beige .dark,
+.beige > h1,
+.beige > h2,
+.beige > h3 {
+	background: #f3f2ec;
+}
+
+.beige .content:not(:last-child) {
+	border-bottom-color: #e4e2db;
+}
+
+
+/* BRAND ACCENT */
+
+.brand_accent,
+#booking_location,
+#booking_location h2 span,
+#search,
+#search_results .top_border,
+#search_results .result:hover,
+#loving_this {
+	background-color: #3e9f9d;
+	background-image: url(../img/green.jpg);
+	color: #FFF;
+	text-shadow: 1px 1px rgba(20,100,100,.5);
+}
+
+.brand_accent {
+	text-shadow: 1px 1px #318a88;
+}
+
+.brand_accent .dark,
+.brand_accent > h1,
+.brand_accent > h2,
+.brand_accent > h3,
+.brand_accent > h4 {
+	background: #338f8d;
+}
+
+.brand_accent a {
+	color: #f6ce2f;
+}
+
+
+/* DOTTED BORDER */
+
+.border,
+.simple_promo {
+	border-color: #bcb3a6;
+}
+
+.webkit .border,
+.gecko .border,
+.webkit .simple_promo,
+.gecko .simple_promo {
+	border-image: url(../img/dotted_border.png) 9 round round;
+
+	-moz-border-image: url(../img/dotted_border.png) 9 9 round round;
+	-webkit-border-image: url(../img/dotted_border.png) 9 round round;
+}
+
+
+/* PAPER */
+
+.paper {
+	background: url(../img/paper.gif);
+}
+
+.webkit .paper,
+.gecko .paper {
+	border-image: url(../img/paper_border.png) 6 repeat;
+
+	-moz-border-image: url(../img/paper_border.png) 6 repeat;
+	-webkit-border-image: url(../img/paper_border.png) 6  repeat;
+}
+
+
+/* ERROR/ALERTS */
+
+.error_message,
+p.error {
+	background: #df2d00;
+	border-color: #ab2200;
+	box-shadow: inset 0 1px #ff7a7a, inset 0 -3px #c82800, 2px 3px rgba(0,0,0,.14);
+	
+	-moz-box-shadow: inset 0 1px #ff7a7a, inset 0 -3px #c82800, 2px 3px rgba(0,0,0,.14);
+	-webkit-box-shadow: inset 0 1px #ff7a7a, inset 0 -3px #c82800, 2px 3px rgba(0,0,0,.14);
+}
+
+
+/*-------------------------------
+
+	ICONS
+
+-------------------------------*/
+
+/* BROWN */
+.icon:after,
+.icon i {
+	background-image: url(../img/brown.png);
+}
+
+
+/* WHITE */
+.brand_accent .icon:after,
+.brand_accent .icon i,
+.tclose,
+#left nav a i,
+#left nav a:after,
+.tweet p time i,
+.tweet p time:after {
+	background-image: url(../img/white.png);
+}
+
+
+/* GREEN */
+.key {
+	background-image: url(../img/green.png);
+}
+
+
+/* YELLOW */
+#left nav a:hover i,
+#left nav a:hover:after,
+#left nav a.on i,
+#left nav a.on:after {
+	background-image: url(../img/yellow.png);
+}
+
+
+/*---------------------
+
+	BULLETS
+	These do not use the same method as each one is the same.
+
+*/
+
+/* NORMAL */
+
+.bullets li {
+	background-image: url(../img/brown_bullet.png);
+}
+
+.tick i,
+.tick:after {
+	background-image: url(../img/brown_tick.png);
+}
+
+.ticks li {
+	background-image: url(../img/brown_tick.png);
+}
+
+/* BRAND ACCENT */
+
+.brand_accent .bullets li {
+	background-image: url(../img/white_bullet.png);
+}
+
+.brand_accent .ticks li {
+	background-image: url(../img/white_tick.png);
+}
+
+
+/* FAQ */
+
+.faq dt:after,
+.faq dd:after,
+.faq i {
+	background-image: url(../img/faq.png);
+}
+
+
+/*-------------------------------
+
+	LAYOUT
+
+-------------------------------*/
+
+#corporate {
+	height: auto;
+}
+
+#intro {
+	position: relative;
+	width: 920px;
+	height: 30px;
+	padding: 20px;
+	margin: 30px auto;
+	background: url(../img/white.jpg);
+}
+
+#intro h1 {
+	margin: 0;
+	font-size: 25px;
+}
+
+
+/*---------------------
+
+	SEARCH
+
+---------------------*/
+
+#search {
+	width: 286px;
+	height: 50px;
+	padding: 12px;
+}
+
+#search .join {
+	width: 280px;
+	height: 46px;
+	border-radius: 10px;
+	
+	-moz-border-radius: 10px;
+}
+
+#search .join input {
+	width: 206px;
+	padding: 6px 12px;
+	height: 34px;
+	border-radius: 9px 0 0 9px;
+	font-size: 18px;
+	
+	border-radius: 9px 0 0 9px;
+}
+
+#search .join button {
+	width: 50px;
+	height: 46px;
+	border-radius: 0 9px 9px 0;
+	font-size: 22px;
+	
+	-moz-border-radius: 0 9px 9px 0;
+}
+
+#search.active button span {
+	width: 50px;
+	height: 46px;
+	background-position: 50% 50%;
+}
+
+#search_message .button span {
+	background-image: url(../img/search_close.png);
+}
+
+#search_results {
+	top: 494px;
+}
+
+
+/* FIX FOR FIREFOX & ITS DODGY BUTTONS */
+
+.gecko #search.active button span {
+	top: -25px;
+}
+
+
+/*---------------------
+
+	SEARCH STYLING
+
+---------------------*/
+
+#search .join {
+	border-color: #2b7a77;
+}
+
+#search_results h2 {
+	background: #f8f7f3;
+}
+
+#search_results h2,
+#search_results .result {
+	border-color: #e4e2db;
+}
+
+#search_results .result {
+	background: #f3f2ec;
+}
+
+#search_results .result:hover small:after {
+	background-image: url(../img/white.png);
+}
+
+#search_results .result .white_link:hover {
+	background: #FFF200 url(../img/white_link.png) 100% 50% no-repeat;
+	color: #000;
+	text-shadow: none;
+}
+
+#search_results h3 {
+	color: #c72424;
+}
+
+#search_results h3 span {
+	color: #5C4832;
+}
+
+#search.active button span {
+	background-image: url(../img/search_close.png);
+}
+
+
+/* LOADING */
+
+#overlay .loading {
+	background-image: url(../img/loading.gif);
+}
+
+
+/*---------------------
+
+	TINYBOX
+
+---------------------*/
+
+.tbox {
+	background: #FFF url(../img/loading.gif) 50% 50% no-repeat;
+}
+
+.tclose {
+	border-color: #3E9F9D;
+	background-color: #3E9F9D;
+}
+
+#tandcs h2 {
+	box-shadow: 0 10px rgba(54,159,158,.5);
+	
+	-moz-box-shadow: 0 10px rgba(54,159,158,.5);
+}
+
+
+/*---------------------
+
+	GALLERY
+
+---------------------*/
+
+#gallery {
+	width: 990px;
+	height: 425px;
+	margin: 10px auto 30px;
+}
+
+#gallery .arrow {
+	display: none;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	background: url(../img/arrows.png);
+	
+	-moz-border-radius: 50px;
+}
+
+#gallery .next {
+	right: -75px;
+	background-position: -100px 0;
+}
+
+#gallery .prev {
+	left: -75px;
+	background-position: 0 0;
+}
+
+#gallery .next:hover {
+	right: -75px;
+	background-position: -100px -100px;
+}
+
+#gallery .prev:hover {
+	left: -75px;
+	background-position: 0 -100px;
+}
+
+
+/*----------------------------------------------
+
+	NEWS
+
+----------------------------------------------*/
+
+article .tag time {
+	border-color: #d4d3cf;
+}
+
+#news_nav .on {
+	background-image: url(../img/white_tick.png);
+}
+
+#news_nav h2 a:hover {
+	color: #ffea01;
+}
+
+#news_nav h2 a {
+	background: url(../img/home_icon.png) 100% 0 no-repeat;
+}
+
+
+/*----------------------------------------------
+
+	FORMS
+
+----------------------------------------------*/
+
+/*---------------------
+
+	INPUTS
+
+---------------------*/
+
+form input,
+form textarea,
+form .select {
+	border-color: #aba090;
+	box-shadow: 0 0 0 1px rgba(255,255,255,1), inset 1px 1px 2px rgba(156,144,130,.4);
+	
+	-moz-box-shadow: 0 0 0 1px rgba(255,255,255,1), inset 1px 1px 2px rgba(156,144,130,.4);
+	-webkit-box-shadow: 0 0 0 1px rgba(255,255,255,1), inset 1px 1px 2px rgba(156,144,130,.4);
+}
+
+form input:hover,
+form textarea:hover,
+form .select:hover {
+	border-color: #42a1af;
+}
+
+form input:focus,
+form textarea:focus,
+form .select.focus {
+	border-color: #42a1af;
+	box-shadow: 0 0 4px 2px rgba(66,171,175,.4), inset 1px 1px 2px rgba(66,171,175,.4);
+	color: #37717a;
+	
+	-moz-box-shadow: 0 0 4px 2px rgba(66,171,175,.4), inset 1px 1px 2px rgba(66,171,175,.4);
+	-webkit-box-shadow: 0 0 4px 2px rgba(66,171,175,.4), inset 1px 1px 2px rgba(66,171,175,.4);
+}
+
+
+/*---------------------
+
+	BUTTON
+
+*/
+
+form button,
+.button {
+	border-color: #d56b02;
+	box-shadow: inset 0 1px #ffae42, 0 0 0 1px #FFF;
+	background: #ed8000;
+	text-shadow: 1px 1px #d56b02;
+
+	-moz-box-shadow: inset 0 1px #ffae42, 0 0 0 1px #FFF;
+	-webkit-box-shadow: inset 0 1px #ffae42, 0 0 0 1px #FFF;
+	
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #f18a00),
+		color-stop(1, #e97400)
+	);
+	background: -moz-linear-gradient(
+		center top,
+		#f18a00 0%,
+		#e97400 100%
+	);
+}
+
+
+/* FOCUS */
+
+form button:focus,
+.button:focus {
+	box-shadow: inset 0 1px #ffae42, 0 0 4px 2px rgba(237,128,0,.6);
+	
+	-moz-box-shadow: inset 0 1px #ffae42, 0 0 4px 2px rgba(237,128,0,.6);
+	-webkit-box-shadow: inset 0 1px #ffae42, 0 0 4px 2px rgba(237,128,0,.6);
+}
+
+
+/* HOVER */
+
+form button:hover,
+form .select a:hover,
+form .select.hover a,
+.button:hover {
+	background: #f68f16;
+	
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #f19800),
+		color-stop(1, #e97400)
+	);
+	background: -moz-linear-gradient(
+		center top,
+		#f19800 0%,
+		#e97400 100%
+	);
+}
+
+
+/* ACTIVE */
+
+form button:active,
+form .select a:active,
+.button:active {
+	box-shadow: inset 0 -1px #ffae42, 0 0 0 1px #FFF;
+	background: #e3800b;
+	
+	-moz-box-shadow: inset 0 -1px #ffae42, 0 0 0 1px #FFF;
+	-webkit-box-shadow: inset 0 -1px #ffae42, 0 0 0 1px #FFF;
+	
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #e97400),
+		color-stop(1, #f19800)
+	);
+	background: -moz-linear-gradient(
+		center top,
+		#e97400 0%,
+		#f19800 100%
+	);
+}
+
+
+/*---------------------
+
+	SELECTS
+
+*/
+
+form .select {
+	background: #aba090;
+}
+
+form .select.hover,
+form .select.focus {
+	background: #42a1af;
+}
+
+
+/* SELECT BODY */
+
+form .select span {
+	background: #ebe8e4;
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #f6f4f2),
+		color-stop(1, #ebe8e4)
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#f6f4f2 0%,
+		#ebe8e4 100%
+	);
+}
+
+form .select.hover span,
+form .select.focus span {
+	background: #c7e3e7;
+	color: #37717a;
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #d7edf0),
+		color-stop(1, #c7e3e7)
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#d7edf0 0%,
+		#c7e3e7 100%
+	);
+}
+
+
+/* SELECT BUTTON */
+
+form .select a {
+	box-shadow: inset 0 1px #FFF, inset 1px 0 rgba(156,144,130,.4);
+	background: #bbb0a2 url(/assets/giraffe/images/classic/forms/select.png) 0 0;
+	
+	-moz-box-shadow: inset 0 1px #FFF, inset 1px 0 rgba(156,144,130,.4);
+	-webkit-box-shadow: inset 0 1px #FFF, inset 1px 0 rgba(156,144,130,.4);
+	
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #e0dad4),
+		color-stop(1, #bbb0a2)
+	);
+	background: -moz-linear-gradient(
+		center top,
+		#e0dad4 0%,
+		#bbb0a2 100%
+	);
+}
+
+form .select.hover a,
+form .select.focus a {
+	box-shadow: inset 0 1px #e0f1f4, inset 1px 0 rgba(66,171,175,.6);
+	background-color: #63b8c4;
+	
+	-moz-box-shadow: inset 0 1px #e0f1f4, inset 1px 0 rgba(66,171,175,.6);
+	-webkit-box-shadow: inset 0 1px #e0f1f4, inset 1px 0 rgba(66,171,175,.6);
+	
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, #98d9e3),
+		color-stop(1, #63b8c4)
+	);
+	background-image: -moz-linear-gradient(
+		center top,
+		#98d9e3 0%,
+		#63b8c4 100%
+	);
+}
+
+form .select a:after {
+	background: url(/assets/giraffe/images/classic/forms/select.png) 0 0;
+}
+
+
+/*---------------------
+
+	JOINS
+	
+	For when there is an input right next to a button or two selects
+
+*/
+
+form .join {
+	border-color: #aba090;
+	background: #aba090;
+}
+
+form .join.hover {
+	border-color: #42a1af;
+}
+
+form .join.focus {
+	border-color: #42a1af;
+	box-shadow: 0 0 4px 2px rgba(66,171,175,.4);
+	
+	-moz-box-shadow: 0 0 4px 2px rgba(66,171,175,.4);
+	-webkit-box-shadow: 0 0 4px 2px rgba(66,171,175,.4);
+}
+
+form .join input {
+	box-shadow: inset 1px 1px 2px rgba(156,144,130,.4);
+
+	-moz-box-shadow: inset 1px 1px 2px rgba(156,144,130,.4);
+	-webkit-box-shadow: inset 1px 1px 2px rgba(156,144,130,.4);
+}
+
+form .join button {
+	box-shadow: inset 0 1px #ffae42;
+	
+	-moz-box-shadow: inset 0 1px #ffae42;
+	-webkit-box-shadow: inset 0 1px #ffae42;
+}
+
+
+/* SELECTS */
+
+form .join_select {
+	background: #aba090;
+}
+
+
+/*---------------------
+
+	ERRORS
+
+---------------------*/
+
+form .error p.error:after {
+	background: url(/assets/giraffe/images/classic/forms/error.png);
+}
+
+/* NORMAL */
+
+form .error input,
+form .error .select,
+form .error textarea {
+	border-color: #dc2d09;
+	box-shadow: 0 0 0 1px #FFF, inset 1px 1px 2px rgba(220,45,9,.4);
+	
+	-moz-box-shadow: 0 0 0 1px #FFF, inset 1px 1px 2px rgba(220,45,9,.4);
+	-webkit-box-shadow: 0 0 0 1px #FFF, inset 1px 1px 2px rgba(220,45,9,.4);
+}
+
+form .error .select {
+	background: #dc2d09;
+}
+
+form .error .join_select {
+	background: #dc2d09;
+}
+
+
+/* FOCUS */
+
+form .error input:focus,
+form .error .select.focus,
+form .error textarea:focus {
+	box-shadow: 0 0 4px 2px rgba(220,45,9,.4), inset 1px 1px 2px rgba(220,45,9,.4);
+	
+	-moz-box-shadow: 0 0 4px 2px rgba(220,45,9,.4), inset 1px 1px 2px rgba(220,45,9,.4);
+	-webkit-box-shadow: 0 0 4px 2px rgba(220,45,9,.4), inset 1px 1px 2px rgba(220,45,9,.4);
+}
+
+
+/*-------------------------------
+
+	MEDIA QUERIES
+
+-------------------------------*/
+
+@media all and ( min-width: 1080px ) {
+	
+	#gallery .arrow {
+		display: block;
+	}
+	
+}
+
+/*   QR GUIDE TEXT COLOUR   */
+
+#qr_guide h1 .line_2 {
+	color: #3e9f9d;
+}
